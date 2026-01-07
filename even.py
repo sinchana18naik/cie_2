@@ -1,8 +1,13 @@
-num=int(input("enter the number: "))
+import sys
 
-if (num %2 == 0):
-    print(f"{num} is an even number")
-
+print(sys.argv)
+if len(sys.argv) > 1:
+    num= int(sys.argv[1])
+    if num == 0:
+        print("Number is Zero")
+    elif num % 2 == 0:
+        print("Number is Even")
+    else:
+        print("Number is Odd")
 else:
-    print(f"{num} is an odd number")
-      
+    print("No number provided")
