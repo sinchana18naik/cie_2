@@ -3,11 +3,12 @@ import sys
 print(sys.argv)
 if len(sys.argv) > 1:
     num= int(sys.argv[1])
+    
     if num == 0:
-        print("Number is Zero")
-    elif num % 2 == 0:
-        print("Number is Even")
+        print("number is zero")
+    elif num % 2 ==0:
+        print("number is even")
     else:
-        print("Number is Odd")
+        print("number is odd")
 else:
-    print("No number provided")
+    print("no number is provided")
